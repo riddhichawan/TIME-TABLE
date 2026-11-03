@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Time Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 College Time Table</h1>
+        <p>Manage your weekly class schedule</p>
+    </header>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>Welcome, Student!</h2>
+            <p>Here is your weekly lecture schedule.</p>
+            <h3 id="todayDate"></h3>
+        </div>
+
+        <div class="top-section">
+            <h2>Weekly Time Table</h2>
+            <button onclick="openForm()">+ Add Lecture</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+
+                <tbody id="timetableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-section" id="lectureForm">
+            <h2 id="formTitle">Add New Lecture</h2>
+
+            <form id="myForm">
+                <label>Day:</label>
+                <select id="day" required>
+                    <option value="">Select Day</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                </select>
+
+                <label>Time:</label>
+                <select id="time" required>
+                    <option value="">Select Time</option>
+                    <option>9:00 - 10:00</option>
+                    <option>10:00 - 11:00</option>
+                    <option>11:00 - 12:00</option>
+                    <option>12:00 - 1:00</option>
+                    <option>1:00 - 2:00</option>
+                    <option>2:00 - 3:00</option>
+                </select>
+
+                <label>Subject:</label>
+                <input type="text" id="subject"
+                       placeholder="Enter Subject" required>
+
+                <label>Teacher:</label>
+                <input type="text" id="teacher"
+                       placeholder="Enter Teacher Name" required>
+
+                <label>Classroom:</label>
+                <input type="text" id="room"
+                       placeholder="Enter Classroom" required>
+
+                <button type="submit">Save Lecture</button>
+                <button type="button" class="cancel"
+                        onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 College Time Table Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

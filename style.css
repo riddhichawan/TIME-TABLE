@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4934a5, #8065dc);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.welcome {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.welcome h2 {
+    color: #4934a5;
+    margin-bottom: 10px;
+}
+
+#todayDate {
+    margin-top: 12px;
+    color: #777;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.top-section h2 {
+    color: #4934a5;
+}
+
+button {
+    background: #6045c5;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #39278c;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th {
+    background: #6045c5;
+    color: white;
+    padding: 15px 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    text-align: center;
+    min-width: 110px;
+}
+
+tr:nth-child(even) {
+    background: #f5f3ff;
+}
+
+.lecture {
+    background: #e9e3ff;
+    border-radius: 6px;
+    padding: 8px;
+    color: #4934a5;
+}
+
+.lecture strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lecture small {
+    display: block;
+    margin: 4px 0;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+    margin: 3px;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.form-section {
+    display: none;
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+.form-section h2 {
+    color: #4934a5;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    margin-top: 18px;
+}
+
+.cancel {
+    background: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4934a5;
+    color: white;
+    margin-top: 40px;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .top-section {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .welcome {
+        padding: 18px;
+    }
+}
